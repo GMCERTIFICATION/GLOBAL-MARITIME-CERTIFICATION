@@ -451,10 +451,10 @@ footer{background:var(--navy);padding:44px 5% 22px;border-top:1px solid rgba(201
         <span style="color:rgba(255,255,255,0.4);font-size:12px;margin-left:auto">GLOBAL MARITIME CERTIFICATION — Client Portal</span>
       </div>
       <div class="mockup-body">
-        <div class="mockup-upload">
+        <div class="mockup-upload" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">
           <div class="mockup-upload-icon">📤</div>
           <div class="mockup-upload-text" data-i18n="mockup_upload">Drop your documents here or click to select</div>
-          <button class="mockup-upload-btn" data-i18n="mockup_btn">Select files</button>
+          <button class="mockup-upload-btn" data-i18n="mockup_btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;">Select files</button>
         </div>
         <div class="mockup-doc"><div class="mockup-doc-icon">🛂</div><div class="mockup-doc-info"><div class="mockup-doc-name">Passport</div><div class="mockup-doc-meta">Panama · Expires Mar 2028</div></div><span class="mockup-badge badge-ok" data-i18n="badge_valid">Valid</span></div>
         <div class="mockup-doc"><div class="mockup-doc-icon">📋</div><div class="mockup-doc-info"><div class="mockup-doc-name">Form F76 — Panama Flag State</div><div class="mockup-doc-meta">SEGUMAR · Submitted</div></div><span class="mockup-badge badge-review" data-i18n="badge_review">In Review</span></div>
@@ -503,7 +503,8 @@ footer{background:var(--navy);padding:44px 5% 22px;border-top:1px solid rgba(201
           <option>Montenegro</option><option>Belize</option><option>Honduras</option>
         </select>
       </div>
-      <div class="form-row"><label data-i18n="f_msg">Message</label><textarea name="message" placeholder="Describe your situation and any urgent embarkation dates..." required></textarea></div>
+      <div class="form-row"><label data-i18n="f_msg">Message</label><textarea name="message" placeholder="Describe your situation, urgent embarkation dates, and list the documents you need to submit. We will send you a secure upload link by email." required></textarea></div>
+      <p style="font-size:12px;color:#6b7280;margin-bottom:12px;">📎 After submitting, we will send you a secure link to upload your documents directly to our team.</p>
       <button type="submit" class="form-submit" data-i18n="f_submit">Send Message →</button>
       <div id="formSuccess" style="display:none;margin-top:16px;padding:14px;background:#f0fdf4;border:1px solid #86efac;border-radius:4px;color:#166534;font-size:14px;text-align:center;">✅ Message sent! We will get back to you shortly.</div>
     </form>
