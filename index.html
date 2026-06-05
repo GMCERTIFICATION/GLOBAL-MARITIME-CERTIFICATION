@@ -146,7 +146,10 @@ footer{background:var(--navy);padding:44px 5% 22px;border-top:1px solid rgba(201
 .footer-copy{font-size:12px;color:rgba(255,255,255,0.3);}
 .footer-flags-row{display:flex;gap:6px;flex-wrap:wrap;}
 
-.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.social-links{display:flex;gap:10px;margin-top:14px;}
+.social-btn{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.15);text-decoration:none;transition:all 0.2s;}
+.social-btn:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px);}
+
 .fade-in.visible{opacity:1;transform:translateY(0);}
 
 @media(max-width:768px){
@@ -412,7 +415,7 @@ footer{background:var(--navy);padding:44px 5% 22px;border-top:1px solid rgba(201
       <ul class="service-list">
         <li data-i18n="s6_l1">Available 24/7 in EN, ES, IT, DE, FR, 中文</li>
         <li data-i18n="s6_l2">Document checklists by flag & certificate type</li>
-        <li data-i18n="s6_l3">Automatic expiry alerts</li>
+        <li data-i18n="s6_l3">Deadline guidance & process support</li>
       </ul>
     </div>
   </div>
@@ -433,35 +436,54 @@ footer{background:var(--navy);padding:44px 5% 22px;border-top:1px solid rgba(201
   <div class="portal-layout">
     <div class="fade-in">
       <div class="section-eyebrow" data-i18n="portal_eyebrow">Client Portal</div>
-      <h2 class="section-title" style="text-align:left;margin-bottom:14px" data-i18n="portal_title_html">Upload your documents<br><em>from anywhere</em></h2>
-      <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:28px" data-i18n="portal_sub">Our secure digital portal lets you submit all documents, track your application and receive automatic expiry alerts — all in one place.</p>
+      <h2 class="section-title" style="text-align:left;margin-bottom:14px" data-i18n="portal_title_html">Submit your documents<br><em>simply &amp; securely</em></h2>
+      <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:28px" data-i18n="portal_sub">Contact us by email or WhatsApp and we will send you a personalised secure access link — your private workspace to upload documents and track your file, managed directly by our team.</p>
       <div class="portal-steps">
-        <div class="portal-step"><div class="step-num">1</div><div><div class="step-title" data-i18n="step1_title">Create your profile</div><div class="step-desc" data-i18n="step1_desc">Register with name, rank and flag state. Takes less than 2 minutes.</div></div></div>
-        <div class="portal-step"><div class="step-num">2</div><div><div class="step-title" data-i18n="step2_title">Upload your documents</div><div class="step-desc" data-i18n="step2_desc">PDF, JPG or PNG — STCW, medical, Seaman's Book and more.</div></div></div>
-        <div class="portal-step"><div class="step-num">3</div><div><div class="step-title" data-i18n="step3_title">Track your application</div><div class="step-desc" data-i18n="step3_desc">Real-time status updates at every stage of the process.</div></div></div>
-        <div class="portal-step"><div class="step-num">4</div><div><div class="step-title" data-i18n="step4_title">Receive expiry alerts</div><div class="step-desc" data-i18n="step4_desc">Automatic reminders 30 and 7 days before any certificate expires.</div></div></div>
+        <div class="portal-step"><div class="step-num">1</div><div><div class="step-title" data-i18n="step1_title">Get in touch</div><div class="step-desc" data-i18n="step1_desc">Send us your name, rank, flag state and the service you need — by email or WhatsApp.</div></div></div>
+        <div class="portal-step"><div class="step-num">2</div><div><div class="step-title" data-i18n="step2_title">Receive your access link</div><div class="step-desc" data-i18n="step2_desc">We create your private secure workspace and send you a personal link within a few hours.</div></div></div>
+        <div class="portal-step"><div class="step-num">3</div><div><div class="step-title" data-i18n="step3_title">Upload your documents</div><div class="step-desc" data-i18n="step3_desc">PDF, JPG or PNG — STCW, medical, Seaman's Book and more. No account needed.</div></div></div>
+        <div class="portal-step"><div class="step-num">4</div><div><div class="step-title" data-i18n="step4_title">We handle the rest</div><div class="step-desc" data-i18n="step4_desc">Our team reviews your file, keeps you updated at every stage and notifies you before any deadline.</div></div></div>
       </div>
-      <a href="#contact" class="btn-primary" data-i18n="portal_cta">Request Portal Access →</a>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:4px;">
+        <a href="#contact" class="btn-primary" data-i18n="portal_cta">Request Your Access Link →</a>
+        <a href="https://wa.me/YOURWHATSAPPNUMBER" target="_blank" class="btn-outline" style="display:inline-flex;align-items:center;gap:8px;color:var(--navy);border-color:var(--navy);background:transparent;" data-i18n="portal_wa">💬 WhatsApp</a>
+      </div>
+      <p style="font-size:12px;color:var(--gray-400);margin-top:18px;line-height:1.6;" data-i18n="portal_note">🔒 Your documents are stored in a private, password-protected workspace. Only you and our team have access.</p>
     </div>
     <div class="portal-mockup fade-in">
       <div class="mockup-bar">
         <div class="mockup-dot" style="background:#FF5F57"></div>
         <div class="mockup-dot" style="background:#FEBC2E"></div>
         <div class="mockup-dot" style="background:#28C840"></div>
-        <span style="color:rgba(255,255,255,0.4);font-size:12px;margin-left:auto">GLOBAL MARITIME CERTIFICATION — Client Portal</span>
+        <span style="color:rgba(255,255,255,0.4);font-size:12px;margin-left:auto">GLOBAL MARITIME CERTIFICATION — Client Workspace</span>
       </div>
       <div class="mockup-body">
-        <div class="mockup-upload" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">
-          <div class="mockup-upload-icon">📤</div>
-          <div class="mockup-upload-text" data-i18n="mockup_upload">Drop your documents here or click to select</div>
-          <button class="mockup-upload-btn" data-i18n="mockup_btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;">Select files</button>
+        <!-- Workflow steps visual -->
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:8px;padding:14px 16px;margin-bottom:12px;">
+          <div style="font-size:11px;font-weight:600;color:var(--gray-400);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;">How it works</div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <div style="width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;">1</div>
+            <div style="font-size:12px;color:var(--gray-600);">Contact us → We create your private workspace</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <div style="width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;">2</div>
+            <div style="font-size:12px;color:var(--gray-600);">You receive a secure personal link by email</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <div style="width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;">3</div>
+            <div style="font-size:12px;color:var(--gray-600);">Upload your files — we review &amp; keep you updated</div>
+          </div>
         </div>
-        <div class="mockup-doc"><div class="mockup-doc-icon">🛂</div><div class="mockup-doc-info"><div class="mockup-doc-name">Passport</div><div class="mockup-doc-meta">Panama · Expires Mar 2028</div></div><span class="mockup-badge badge-ok" data-i18n="badge_valid">Valid</span></div>
-        <div class="mockup-doc"><div class="mockup-doc-icon">📋</div><div class="mockup-doc-info"><div class="mockup-doc-name">Form F76 — Panama Flag State</div><div class="mockup-doc-meta">SEGUMAR · Submitted</div></div><span class="mockup-badge badge-review" data-i18n="badge_review">In Review</span></div>
-        <div class="mockup-doc"><div class="mockup-doc-icon">📄</div><div class="mockup-doc-info"><div class="mockup-doc-name">STCW Basic Safety Certificate</div><div class="mockup-doc-meta">Panama · Expires Dec 2026</div></div><span class="mockup-badge badge-ok" data-i18n="badge_valid">Valid</span></div>
-        <div class="mockup-doc"><div class="mockup-doc-icon">⛑️</div><div class="mockup-doc-info"><div class="mockup-doc-name">STCW Security Training Course</div><div class="mockup-doc-meta">Panama · Expires Jun 2027</div></div><span class="mockup-badge badge-ok" data-i18n="badge_valid">Valid</span></div>
-        <div class="mockup-doc"><div class="mockup-doc-icon">🏥</div><div class="mockup-doc-info"><div class="mockup-doc-name">Medical Certificate ENG1</div><div class="mockup-doc-meta">Liberia · Expires in 18 days</div></div><span class="mockup-badge badge-warn" data-i18n="badge_expiring">Expiring</span></div>
-        <div class="mockup-doc"><div class="mockup-doc-icon">📜</div><div class="mockup-doc-info"><div class="mockup-doc-name">Certificate of Endorsement — CoC</div><div class="mockup-doc-meta">Marshall Islands · Under review · Verification pending</div></div><span class="mockup-badge badge-review" data-i18n="badge_review">In Review</span></div>
+        <!-- Document list -->
+        <div class="mockup-doc"><div class="mockup-doc-icon">🛂</div><div class="mockup-doc-info"><div class="mockup-doc-name">Passport</div><div class="mockup-doc-meta">Panama · Expires Mar 2028</div></div><span class="mockup-badge badge-ok">Valid</span></div>
+        <div class="mockup-doc"><div class="mockup-doc-icon">📋</div><div class="mockup-doc-info"><div class="mockup-doc-name">Form F76 — Panama Flag State</div><div class="mockup-doc-meta">SEGUMAR · Submitted</div></div><span class="mockup-badge badge-review">In Review</span></div>
+        <div class="mockup-doc"><div class="mockup-doc-icon">📄</div><div class="mockup-doc-info"><div class="mockup-doc-name">STCW Basic Safety Certificate</div><div class="mockup-doc-meta">Panama · Expires Dec 2026</div></div><span class="mockup-badge badge-ok">Valid</span></div>
+        <div class="mockup-doc"><div class="mockup-doc-icon">🏥</div><div class="mockup-doc-info"><div class="mockup-doc-name">Medical Certificate ENG1</div><div class="mockup-doc-meta">Liberia · Expires in 18 days</div></div><span class="mockup-badge badge-warn">⚠ Check soon</span></div>
+        <div class="mockup-doc"><div class="mockup-doc-icon">📜</div><div class="mockup-doc-info"><div class="mockup-doc-name">Certificate of Endorsement — CoC</div><div class="mockup-doc-meta">Marshall Islands · Under review</div></div><span class="mockup-badge badge-review">In Review</span></div>
+        <!-- Secure note -->
+        <div style="margin-top:10px;padding:8px 10px;background:rgba(10,37,64,0.04);border-radius:6px;font-size:11px;color:var(--gray-400);display:flex;align-items:center;gap:6px;">
+          <span>🔒</span><span>Private workspace · Access via personal link only</span>
+        </div>
       </div>
     </div>
   </div>
@@ -519,6 +541,20 @@ footer{background:var(--navy);padding:44px 5% 22px;border-top:1px solid rgba(201
         <span class="nav-logo-text"><span>GLOBAL MARITIME CERTIFICATION</span></span>
       </a>
       <p class="footer-tagline" data-i18n="footer_tag">International agency for maritime services, certifications and global compliance.</p>
+      <div class="social-links">
+        <a class="social-btn" href="https://www.linkedin.com/company/PLACEHOLDER" target="_blank" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.facebook.com/PLACEHOLDER" target="_blank" title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.instagram.com/PLACEHOLDER" target="_blank" title="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        <a class="social-btn" href="https://wa.me/PLACEHOLDER" target="_blank" title="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        </a>
+      </div>
     </div>
     <div><div class="footer-links-title" data-i18n="fl_services">Services</div>
       <ul class="footer-links">
@@ -566,20 +602,20 @@ s4_l1:"STCW certificates, licenses & medical documents",s4_l2:"Crew employment &
 s5_title:"Compliance Verification & Training Support",s5_desc:"Structured verification and advisory services to support crew readiness and compliance with international maritime standards.",
 s5_l1:"Verification of sea service & certification validity",s5_l2:"Medical certificate validation",s5_l3:"Guidance on mandatory STCW training",s5_l4:"Support for advanced & safety-related courses",
 s6_title:"AI-Powered Assistant",s6_desc:"Our intelligent assistant guides you through every procedure 24/7 in 6 languages — instant answers, checklists and expiry reminders.",
-s6_l1:"Available 24/7 in EN, ES, IT, DE, FR, 中文",s6_l2:"Document checklists by flag & certificate type",s6_l3:"Automatic expiry alerts",
+s6_l1:"Available 24/7 in EN, ES, IT, DE, FR, 中文",s6_l2:"Document checklists by flag & certificate type",s6_l3:"Deadline guidance & process support",
 flags_eyebrow:"Flag States",flags_title_html:"We currently operate<br><em style='color:var(--gold)'>exclusively under the Panamanian flag</em>",
 flags_sub:"We provide full maritime documentation and compliance support under Panama registry, ensuring reliable and streamlined operations for our clients.",
 f1_desc:"World's largest registry — specialist via SEGUMAR",f2_desc:"2nd largest registry — fast processing",f3_desc:"Major open registry — high international standards",
 f4_desc:"Popular Caribbean flag — global recognition",f5_desc:"EU flag — Mediterranean operations",f6_desc:"EU flag — competitive fees",
 f7_desc:"Growing European registry",f8_desc:"Cost-effective registry option",f9_desc:"Central American registry",
 fb_specialist:"Specialist",fb_available:"Available",fb_eu:"EU Flag",
-portal_eyebrow:"Client Portal",portal_title_html:"Upload your documents<br><em>from anywhere</em>",
-portal_sub:"Our secure digital portal lets you submit all documents, track your application and receive automatic expiry alerts — all in one place.",
-step1_title:"Create your profile",step1_desc:"Register with name, rank and flag state. Takes less than 2 minutes.",
-step2_title:"Upload your documents",step2_desc:"PDF, JPG or PNG — STCW, medical, Seaman's Book and more.",
-step3_title:"Track your application",step3_desc:"Real-time status updates at every stage of the process.",
-step4_title:"Receive expiry alerts",step4_desc:"Automatic reminders 30 and 7 days before any certificate expires.",
-portal_cta:"Request Portal Access →",
+portal_eyebrow:"Client Portal",portal_title_html:"Submit your documents<br><em>simply &amp; securely</em>",
+portal_sub:"Contact us by email or WhatsApp and we will send you a personalised secure access link — your private workspace to upload documents and track your file.",
+step1_title:"Get in touch",step1_desc:"Send us your name, rank, flag state and the service you need — by email or WhatsApp.",
+step2_title:"Receive your access link",step2_desc:"We create your private secure workspace and send you a personal link within a few hours.",
+step3_title:"Upload your documents",step3_desc:"PDF, JPG or PNG — STCW, medical, Seaman's Book and more. No account needed.",
+step4_title:"We handle the rest",step4_desc:"Our team reviews your file, keeps you updated at every stage and notifies you before any deadline.",
+portal_cta:"Request Your Access Link →",portal_wa:"💬 WhatsApp",portal_note:"🔒 Your documents are stored in a private, password-protected workspace. Only you and our team have access.",
 mockup_upload:"Drop your documents here or click to select",mockup_btn:"Select files",
 badge_valid:"Valid",badge_expiring:"Expiring",badge_review:"In Review",
 contact_eyebrow:"Get in touch",contact_title_html:"Let's talk about<br><em>your next voyage</em>",
@@ -619,13 +655,13 @@ f1_desc:"Mayor registro del mundo — especialistas vía SEGUMAR",f2_desc:"2° m
 f4_desc:"Bandera caribeña popular — reconocimiento global",f5_desc:"Bandera UE — operaciones mediterráneas",f6_desc:"Bandera UE — tarifas competitivas",
 f7_desc:"Registro europeo en crecimiento",f8_desc:"Opción de registro económica",f9_desc:"Registro centroamericano",
 fb_specialist:"Especialistas",fb_available:"Disponible",fb_eu:"Bandera UE",
-portal_eyebrow:"Portal Cliente",portal_title_html:"Sube tus documentos<br><em>desde cualquier lugar</em>",
-portal_sub:"Nuestro portal digital seguro te permite enviar documentos, seguir tu expediente y recibir alertas automáticas de vencimiento.",
-step1_title:"Crea tu perfil",step1_desc:"Regístrate con nombre, rango y bandera. Tarda menos de 2 minutos.",
-step2_title:"Sube tus documentos",step2_desc:"PDF, JPG o PNG — STCW, médicos, Libreta de Mar y más.",
-step3_title:"Sigue tu expediente",step3_desc:"Actualizaciones en tiempo real en cada etapa del proceso.",
-step4_title:"Recibe alertas de vencimiento",step4_desc:"Recordatorios automáticos 30 y 7 días antes de que venza cualquier certificado.",
-portal_cta:"Solicitar Acceso al Portal →",
+portal_eyebrow:"Portal Cliente",portal_title_html:"Envía tus documentos<br><em>de forma simple y segura</em>",
+portal_sub:"Contáctanos por email o WhatsApp y te enviaremos un enlace de acceso privado — tu espacio personal para subir documentos y seguir tu expediente.",
+step1_title:"Contáctanos",step1_desc:"Envíanos tu nombre, rango, bandera y el servicio que necesitas — por email o WhatsApp.",
+step2_title:"Recibe tu enlace de acceso",step2_desc:"Creamos tu espacio seguro y te enviamos un enlace personal en pocas horas.",
+step3_title:"Sube tus documentos",step3_desc:"PDF, JPG o PNG — STCW, médicos, Libreta de Mar y más. Sin crear cuenta.",
+step4_title:"Nosotros nos encargamos",step4_desc:"Nuestro equipo revisa tu expediente, te mantiene informado y te avisa antes de cualquier vencimiento.",
+portal_cta:"Solicitar Enlace de Acceso →",portal_wa:"💬 WhatsApp",portal_note:"🔒 Tus documentos se almacenan en un espacio privado. Solo tú y nuestro equipo tienen acceso.",
 mockup_upload:"Arrastra tus documentos aquí o haz clic para seleccionar",mockup_btn:"Seleccionar archivos",
 badge_valid:"Válido",badge_expiring:"Por vencer",badge_review:"En revisión",
 contact_eyebrow:"Contáctenos",contact_title_html:"Hablemos de<br><em>tu próximo viaje</em>",
@@ -665,13 +701,13 @@ f1_desc:"Il più grande registro del mondo — specialisti tramite SEGUMAR",f2_d
 f4_desc:"Popolare bandiera caraibica — riconoscimento globale",f5_desc:"Bandiera UE — operazioni nel Mediterraneo",f6_desc:"Bandiera UE — tariffe competitive",
 f7_desc:"Registro europeo in crescita",f8_desc:"Opzione di registro conveniente",f9_desc:"Registro centroamericano",
 fb_specialist:"Specialisti",fb_available:"Disponibile",fb_eu:"Bandiera UE",
-portal_eyebrow:"Portale Clienti",portal_title_html:"Carica i tuoi documenti<br><em>da qualsiasi luogo</em>",
-portal_sub:"Il nostro portale digitale sicuro permette di inviare documenti, monitorare la pratica e ricevere avvisi automatici di scadenza.",
-step1_title:"Crea il tuo profilo",step1_desc:"Registrati con nome, grado e stato di bandiera. Richiede meno di 2 minuti.",
-step2_title:"Carica i tuoi documenti",step2_desc:"PDF, JPG o PNG — STCW, documenti medici, Libretto di Navigazione e altro.",
-step3_title:"Monitora la tua pratica",step3_desc:"Aggiornamenti in tempo reale ad ogni fase del processo.",
-step4_title:"Ricevi avvisi di scadenza",step4_desc:"Promemoria automatici 30 e 7 giorni prima della scadenza di qualsiasi certificato.",
-portal_cta:"Richiedi Accesso al Portale →",
+portal_eyebrow:"Portale Clienti",portal_title_html:"Invia i tuoi documenti<br><em>in modo semplice e sicuro</em>",
+portal_sub:"Contattaci via email o WhatsApp e ti invieremo un link di accesso privato — il tuo spazio personale per caricare documenti e seguire la tua pratica.",
+step1_title:"Contattaci",step1_desc:"Inviaci nome, grado, bandiera e il servizio di cui hai bisogno — via email o WhatsApp.",
+step2_title:"Ricevi il tuo link di accesso",step2_desc:"Creiamo il tuo spazio sicuro e ti inviamo un link personale entro poche ore.",
+step3_title:"Carica i tuoi documenti",step3_desc:"PDF, JPG o PNG — STCW, medici, Libretto di Navigazione e altro. Senza creare account.",
+step4_title:"Pensiamo a tutto noi",step4_desc:"Il nostro team esamina la tua pratica, ti aggiorna ad ogni fase e ti avvisa prima di qualsiasi scadenza.",
+portal_cta:"Richiedi il Tuo Link di Accesso →",portal_wa:"💬 WhatsApp",portal_note:"🔒 I tuoi documenti sono conservati in uno spazio privato. Solo tu e il nostro team avete accesso.",
 mockup_upload:"Trascina i tuoi documenti qui o clicca per selezionare",mockup_btn:"Seleziona file",
 badge_valid:"Valido",badge_expiring:"In scadenza",badge_review:"In revisione",
 contact_eyebrow:"Contattaci",contact_title_html:"Parliamo del<br><em>tuo prossimo viaggio</em>",
@@ -711,13 +747,13 @@ f1_desc:"Weltgrößtes Register — Spezialist über SEGUMAR",f2_desc:"2. größ
 f4_desc:"Karibische Flagge — weltweite Anerkennung",f5_desc:"EU-Flagge — Mittelmeeroperationen",f6_desc:"EU-Flagge — wettbewerbsfähige Gebühren",
 f7_desc:"Wachsendes europäisches Register",f8_desc:"Kostengünstige Registeroption",f9_desc:"Zentralamerikanisches Register",
 fb_specialist:"Spezialist",fb_available:"Verfügbar",fb_eu:"EU-Flagge",
-portal_eyebrow:"Kundenportal",portal_title_html:"Laden Sie Ihre Dokumente<br><em>von überall hoch</em>",
-portal_sub:"Unser sicheres digitales Portal ermöglicht das Einreichen von Dokumenten, Statusverfolgung und automatische Ablaufbenachrichtigungen.",
-step1_title:"Profil erstellen",step1_desc:"Registrieren Sie sich mit Name, Dienstgrad und Flaggenstaat. Dauert weniger als 2 Minuten.",
-step2_title:"Dokumente hochladen",step2_desc:"PDF, JPG oder PNG — STCW, medizinische Dokumente, Seebuch und mehr.",
-step3_title:"Antrag verfolgen",step3_desc:"Echtzeit-Statusupdates in jeder Phase des Prozesses.",
-step4_title:"Ablaufwarnungen erhalten",step4_desc:"Automatische Erinnerungen 30 und 7 Tage vor Ablauf eines Zertifikats.",
-portal_cta:"Portalzugang anfragen →",
+portal_eyebrow:"Kundenportal",portal_title_html:"Dokumente einreichen<br><em>einfach &amp; sicher</em>",
+portal_sub:"Kontaktieren Sie uns per E-Mail oder WhatsApp — wir senden Ihnen einen persönlichen sicheren Zugangslink für Ihren privaten Dokumenten-Arbeitsbereich.",
+step1_title:"Kontakt aufnehmen",step1_desc:"Senden Sie uns Name, Dienstgrad, Flaggenstaat und gewünschte Leistung — per E-Mail oder WhatsApp.",
+step2_title:"Zugangslink erhalten",step2_desc:"Wir erstellen Ihren privaten Bereich und senden den Link innerhalb weniger Stunden.",
+step3_title:"Dokumente hochladen",step3_desc:"PDF, JPG oder PNG — STCW, medizinische Dokumente, Seebuch und mehr. Kein Konto nötig.",
+step4_title:"Wir erledigen den Rest",step4_desc:"Unser Team prüft Ihre Unterlagen, hält Sie auf dem Laufenden und informiert Sie vor Ablaufterminen.",
+portal_cta:"Zugangslink anfragen →",portal_wa:"💬 WhatsApp",portal_note:"🔒 Ihre Dokumente werden in einem privaten, passwortgeschützten Bereich gespeichert.",
 mockup_upload:"Dokumente hierher ziehen oder klicken",mockup_btn:"Dateien auswählen",
 badge_valid:"Gültig",badge_expiring:"Läuft ab",badge_review:"In Prüfung",
 contact_eyebrow:"Kontakt",contact_title_html:"Sprechen wir über<br><em>Ihre nächste Reise</em>",
@@ -757,13 +793,13 @@ f1_desc:"Plus grand registre mondial — spécialistes via SEGUMAR",f2_desc:"2e 
 f4_desc:"Pavillon caraïbe populaire — reconnaissance mondiale",f5_desc:"Pavillon UE — opérations méditerranéennes",f6_desc:"Pavillon UE — tarifs compétitifs",
 f7_desc:"Registre européen en croissance",f8_desc:"Option d'enregistrement économique",f9_desc:"Registre centraméricain",
 fb_specialist:"Spécialiste",fb_available:"Disponible",fb_eu:"Pavillon UE",
-portal_eyebrow:"Espace Client",portal_title_html:"Déposez vos documents<br><em>de n'importe où</em>",
-portal_sub:"Notre portail numérique sécurisé vous permet de soumettre des documents, suivre votre dossier et recevoir des alertes d'expiration automatiques.",
-step1_title:"Créez votre profil",step1_desc:"Inscrivez-vous avec nom, grade et État du pavillon. Moins de 2 minutes.",
-step2_title:"Déposez vos documents",step2_desc:"PDF, JPG ou PNG — STCW, médicaux, Livret de Marin et plus.",
-step3_title:"Suivez votre dossier",step3_desc:"Mises à jour en temps réel à chaque étape du processus.",
-step4_title:"Recevez des alertes",step4_desc:"Rappels automatiques 30 et 7 jours avant l'expiration de tout certificat.",
-portal_cta:"Demander l'Accès au Portail →",
+portal_eyebrow:"Espace Client",portal_title_html:"Déposez vos documents<br><em>simplement &amp; en sécurité</em>",
+portal_sub:"Contactez-nous par e-mail ou WhatsApp — nous vous enverrons un lien d'accès personnel sécurisé pour votre espace de travail privé.",
+step1_title:"Prenez contact",step1_desc:"Envoyez-nous votre nom, grade, pavillon et le service souhaité — par e-mail ou WhatsApp.",
+step2_title:"Recevez votre lien d'accès",step2_desc:"Nous créons votre espace privé et vous envoyons un lien personnel dans quelques heures.",
+step3_title:"Déposez vos documents",step3_desc:"PDF, JPG ou PNG — STCW, médicaux, Livret de Marin et plus. Sans créer de compte.",
+step4_title:"Nous gérons le reste",step4_desc:"Notre équipe examine votre dossier, vous tient informé à chaque étape et vous avertit avant chaque échéance.",
+portal_cta:"Demander Votre Lien d'Accès →",portal_wa:"💬 WhatsApp",portal_note:"🔒 Vos documents sont stockés dans un espace privé. Seuls vous et notre équipe y avez accès.",
 mockup_upload:"Glissez vos documents ici ou cliquez pour sélectionner",mockup_btn:"Sélectionner des fichiers",
 badge_valid:"Valide",badge_expiring:"Expiration proche",badge_review:"En révision",
 contact_eyebrow:"Contactez-nous",contact_title_html:"Parlons de<br><em>votre prochain voyage</em>",
@@ -803,13 +839,13 @@ f1_desc:"全球最大注册机构——通过SEGUMAR专业服务",f2_desc:"第�
 f4_desc:"流行加勒比船旗——全球认可",f5_desc:"欧盟船旗——地中海业务",f6_desc:"欧盟船旗——具竞争力的费用",
 f7_desc:"成长中的欧洲注册机构",f8_desc:"经济型注册选择",f9_desc:"中美洲注册机构",
 fb_specialist:"专家",fb_available:"可用",fb_eu:"欧盟船旗",
-portal_eyebrow:"客户门户",portal_title_html:"随时随地<br><em>上传您的文件</em>",
-portal_sub:"我们的安全数字门户让您提交所有文件、跟踪申请状态并接收自动到期提醒。",
-step1_title:"创建您的档案",step1_desc:"用姓名、职级和船旗国注册。不到2分钟。",
-step2_title:"上传您的文件",step2_desc:"PDF、JPG或PNG——STCW、医疗、海员证等。",
-step3_title:"跟踪您的申请",step3_desc:"实时状态更新，了解流程每个阶段。",
-step4_title:"接收到期提醒",step4_desc:"任何证书到期前30天和7天自动提醒。",
-portal_cta:"申请门户访问权限 →",
+portal_eyebrow:"客户门户",portal_title_html:"简单安全地<br><em>提交您的文件</em>",
+portal_sub:"通过电子邮件或WhatsApp联系我们，我们将向您发送个人安全访问链接——您的私人工作空间，用于上传文件和跟踪案件。",
+step1_title:"联系我们",step1_desc:"通过电子邮件或WhatsApp告知您的姓名、职级、船旗国及所需服务。",
+step2_title:"收到您的访问链接",step2_desc:"我们将在几小时内创建您的私人安全工作空间并发送个人链接。",
+step3_title:"上传您的文件",step3_desc:"PDF、JPG或PNG——STCW、医疗、海员证等。无需创建账户。",
+step4_title:"我们处理其余事宜",step4_desc:"我们的团队审查您的档案，随时更新进度，并在任何截止日期前通知您。",
+portal_cta:"申请您的访问链接 →",portal_wa:"💬 WhatsApp",portal_note:"🔒 您的文件存储在私人受保护的工作空间。只有您和我们的团队才能访问。",
 mockup_upload:"将文件拖放到此处或点击选择",mockup_btn:"选择文件",
 badge_valid:"有效",badge_expiring:"即将到期",badge_review:"审核中",
 contact_eyebrow:"联系我们",contact_title_html:"谈谈<br><em>您的下一次航行</em>",
